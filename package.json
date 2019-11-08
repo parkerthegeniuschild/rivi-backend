@@ -1,0 +1,35 @@
+{
+  "name": "rivi-backend",
+  "version": "1.0.0",
+  "description": "a sample api",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "NODE_ENV=development nodemon --exec babel-node src/index.js",
+    "build": "babel src -d dist --copy-files",
+    "build:clear": "rm -rf dist",
+    "start": "NODE_ENV=production node dist/index.js"
+  },
+  "author": "Mitchell Patrick",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "app-root-path": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "core-js": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "nodemon": "^1.19.4"
+  }
+}
